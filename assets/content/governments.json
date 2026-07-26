@@ -1,0 +1,67 @@
+{
+  "governments": [
+    {
+      "id": "tribal_council",
+      "name": "Tribal Council",
+      "description": "Elders guide the tribe by consensus.",
+      "unlockedEraId": "tribe",
+      "bonuses": { "happiness": 0.1, "science": 0.0, "military": 0.0, "economy": 0.0, "stability": 0.15 },
+      "penalties": { "expansion": -0.1 },
+      "eventsTag": "tribal"
+    },
+    {
+      "id": "democracy",
+      "name": "Democracy",
+      "description": "Power flows from the people through elections.",
+      "unlockedEraId": "modern",
+      "bonuses": { "happiness": 0.25, "science": 0.15, "military": -0.05, "economy": 0.1, "stability": 0.2 },
+      "penalties": { "warWeariness": 0.2 },
+      "eventsTag": "democracy"
+    },
+    {
+      "id": "capitalism",
+      "name": "Capitalism",
+      "description": "Markets and private enterprise drive growth.",
+      "unlockedEraId": "industrial",
+      "bonuses": { "happiness": 0.05, "science": 0.1, "military": 0.0, "economy": 0.35, "stability": 0.05 },
+      "penalties": { "inequality": 0.2, "unemploymentRisk": 0.1 },
+      "eventsTag": "capitalism"
+    },
+    {
+      "id": "socialism",
+      "name": "Socialism",
+      "description": "The state stewards resources for the common good.",
+      "unlockedEraId": "industrial",
+      "bonuses": { "happiness": 0.15, "science": 0.05, "military": 0.05, "economy": 0.05, "stability": 0.25 },
+      "penalties": { "innovation": -0.1 },
+      "eventsTag": "socialism"
+    },
+    {
+      "id": "monarchy",
+      "name": "Monarchy",
+      "description": "A crown unites the realm under hereditary rule.",
+      "unlockedEraId": "empire",
+      "bonuses": { "happiness": 0.05, "science": 0.0, "military": 0.15, "economy": 0.1, "stability": 0.2 },
+      "penalties": { "successionRisk": 0.15 },
+      "eventsTag": "monarchy"
+    },
+    {
+      "id": "military_dictatorship",
+      "name": "Military Dictatorship",
+      "description": "Order enforced by the sword and the barracks.",
+      "unlockedEraId": "empire",
+      "bonuses": { "happiness": -0.15, "science": -0.05, "military": 0.4, "economy": 0.0, "stability": 0.1 },
+      "penalties": { "diplomacy": -0.25, "revoltRisk": 0.2 },
+      "eventsTag": "dictatorship"
+    },
+    {
+      "id": "technocracy",
+      "name": "Technocracy",
+      "description": "Engineers and scientists steer civilization.",
+      "unlockedEraId": "modern",
+      "bonuses": { "happiness": 0.0, "science": 0.4, "military": 0.1, "economy": 0.15, "stability": 0.1 },
+      "penalties": { "happinessFromCulture": -0.1 },
+      "eventsTag": "technocracy"
+    }
+  ]
+}

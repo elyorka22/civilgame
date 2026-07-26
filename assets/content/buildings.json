@@ -1,0 +1,19 @@
+{
+  "buildings": [
+    { "id": "campfire", "name": "Campfire", "eraId": "tribe", "cost": { "wood": 20 }, "effects": { "happiness": 5, "food": 2 }, "description": "The heart of the tribe." },
+    { "id": "hut", "name": "Hut", "eraId": "tribe", "cost": { "wood": 40, "stone": 10 }, "effects": { "populationCap": 25 }, "description": "Shelter from wind and rain." },
+    { "id": "granary", "name": "Granary", "eraId": "ancient", "cost": { "wood": 60, "stone": 40, "money": 50 }, "effects": { "food": 15, "stability": 3 }, "description": "Stores surplus through lean seasons." },
+    { "id": "library", "name": "Library", "eraId": "ancient", "cost": { "stone": 80, "money": 100 }, "effects": { "science": 12 }, "description": "Knowledge gathered under one roof." },
+    { "id": "market", "name": "Market", "eraId": "ancient", "cost": { "wood": 50, "money": 80 }, "effects": { "money": 20, "trade": 10 }, "description": "Goods and gossip change hands." },
+    { "id": "castle", "name": "Castle", "eraId": "empire", "cost": { "stone": 200, "iron": 40, "money": 250 }, "effects": { "military": 30, "stability": 10 }, "description": "A fortress of stone and authority." },
+    { "id": "temple", "name": "Temple", "eraId": "empire", "cost": { "stone": 120, "gold": 40, "money": 150 }, "effects": { "happiness": 15, "stability": 8 }, "description": "Faith binds the realm." },
+    { "id": "port", "name": "Port", "eraId": "empire", "cost": { "wood": 100, "stone": 80, "money": 180 }, "effects": { "trade": 25, "money": 15 }, "description": "Ships leave laden and return richer." },
+    { "id": "factory", "name": "Factory", "eraId": "industrial", "cost": { "iron": 100, "coal": 80, "money": 300 }, "effects": { "economy": 35, "electricity": -5, "unemployment": -10 }, "description": "Smoke, steel, and wages." },
+    { "id": "power_plant", "name": "Power Plant", "eraId": "industrial", "cost": { "coal": 120, "iron": 60, "money": 280 }, "effects": { "electricity": 40 }, "description": "Current for a hungry age." },
+    { "id": "university", "name": "University", "eraId": "industrial", "cost": { "money": 350, "science": 50 }, "effects": { "science": 30 }, "description": "Where eras are invented." },
+    { "id": "airport", "name": "Airport", "eraId": "modern", "cost": { "money": 500, "oil": 80, "iron": 60 }, "effects": { "trade": 30, "military": 15 }, "description": "Wings for commerce and war." },
+    { "id": "data_center", "name": "Data Center", "eraId": "modern", "cost": { "money": 450, "electricity": 30 }, "effects": { "science": 35, "economy": 15 }, "description": "The new national archive." },
+    { "id": "fusion_reactor", "name": "Fusion Reactor", "eraId": "future", "cost": { "money": 800, "science": 100 }, "effects": { "electricity": 80, "economy": 25 }, "description": "A tame star beneath the city." },
+    { "id": "spaceport", "name": "Spaceport", "eraId": "future", "cost": { "money": 1000, "science": 150, "iron": 100 }, "effects": { "science": 40, "prestige": 50 }, "description": "Gateway beyond the cradle." }
+  ]
+}

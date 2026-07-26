@@ -1,0 +1,340 @@
+{
+  "events": [
+    {
+      "id": "flood",
+      "title": "Great Flood",
+      "description": "Rivers swell beyond their banks. Villages near water are at risk.",
+      "category": "disaster",
+      "minEraId": "tribe",
+      "weight": 8,
+      "choices": [
+        {
+          "id": "evacuate",
+          "label": "Evacuate lowlands",
+          "immediate": { "food": -30, "happiness": -5 },
+          "delayed": [{ "turns": 3, "effects": { "population": 20, "happiness": 8 } }]
+        },
+        {
+          "id": "build_dikes",
+          "label": "Build emergency dikes",
+          "immediate": { "wood": -40, "stone": -20, "money": -50 },
+          "delayed": [{ "turns": 6, "effects": { "stability": 5, "food": 40 } }]
+        },
+        {
+          "id": "ignore",
+          "label": "Trust the old ways",
+          "immediate": { "population": -40, "food": -60, "happiness": -15 },
+          "delayed": []
+        }
+      ]
+    },
+    {
+      "id": "earthquake",
+      "title": "Earthquake",
+      "description": "The ground tears. Stone cracks. People look to the sky for meaning.",
+      "category": "disaster",
+      "minEraId": "ancient",
+      "weight": 5,
+      "choices": [
+        {
+          "id": "rebuild",
+          "label": "Rebuild stronger",
+          "immediate": { "stone": -80, "money": -100, "happiness": 5 },
+          "delayed": [{ "turns": 8, "effects": { "stability": 10 } }]
+        },
+        {
+          "id": "pray",
+          "label": "Hold sacred rites",
+          "immediate": { "happiness": 10, "science": -10 },
+          "delayed": [{ "turns": 4, "effects": { "stability": 5 } }]
+        },
+        {
+          "id": "relocate",
+          "label": "Move the capital inland",
+          "immediate": { "money": -150, "population": -20 },
+          "delayed": [{ "turns": 12, "effects": { "economy": 15, "stability": 8 } }]
+        }
+      ]
+    },
+    {
+      "id": "pandemic",
+      "title": "Spreading Plague",
+      "description": "A sickness moves faster than messengers.",
+      "category": "disaster",
+      "minEraId": "ancient",
+      "weight": 6,
+      "choices": [
+        {
+          "id": "quarantine",
+          "label": "Quarantine cities",
+          "immediate": { "economy": -20, "happiness": -10, "population": -15 },
+          "delayed": [{ "turns": 5, "effects": { "population": 30, "stability": 5 } }]
+        },
+        {
+          "id": "research_cure",
+          "label": "Fund healers and research",
+          "immediate": { "science": -40, "money": -80 },
+          "delayed": [{ "turns": 7, "effects": { "science": 50, "population": 25, "happiness": 10 } }]
+        },
+        {
+          "id": "open_borders",
+          "label": "Keep trade flowing",
+          "immediate": { "population": -80, "happiness": -20 },
+          "delayed": [{ "turns": 2, "effects": { "money": 40 } }]
+        }
+      ]
+    },
+    {
+      "id": "economic_crisis",
+      "title": "Economic Crisis",
+      "description": "Markets seize. Debt whispers in every palace corridor.",
+      "category": "economy",
+      "minEraId": "empire",
+      "weight": 7,
+      "choices": [
+        {
+          "id": "austerity",
+          "label": "Austerity measures",
+          "immediate": { "money": 60, "happiness": -15, "unemployment": 10 },
+          "delayed": [{ "turns": 6, "effects": { "stability": -5, "debt": -40 } }]
+        },
+        {
+          "id": "stimulus",
+          "label": "Public works stimulus",
+          "immediate": { "money": -120, "debt": 80, "happiness": 10 },
+          "delayed": [{ "turns": 8, "effects": { "economy": 25, "unemployment": -15 } }]
+        },
+        {
+          "id": "print_money",
+          "label": "Expand the money supply",
+          "immediate": { "money": 150, "inflation": 12 },
+          "delayed": [{ "turns": 4, "effects": { "happiness": -10, "economy": -10 } }]
+        }
+      ]
+    },
+    {
+      "id": "corruption",
+      "title": "Corruption Scandal",
+      "description": "Officials siphon gold meant for granaries and walls.",
+      "category": "politics",
+      "minEraId": "ancient",
+      "weight": 9,
+      "choices": [
+        {
+          "id": "purge",
+          "label": "Purge the corrupt",
+          "immediate": { "stability": 8, "happiness": 5, "money": 40 },
+          "delayed": [{ "turns": 3, "effects": { "science": -10 } }]
+        },
+        {
+          "id": "ignore_corruption",
+          "label": "Look the other way",
+          "immediate": { "money": -30, "stability": -10 },
+          "delayed": [{ "turns": 10, "effects": { "happiness": -15, "economy": -15 } }]
+        },
+        {
+          "id": "reform",
+          "label": "Launch legal reforms",
+          "immediate": { "money": -60, "science": -20 },
+          "delayed": [{ "turns": 9, "effects": { "stability": 15, "economy": 10 } }]
+        }
+      ]
+    },
+    {
+      "id": "political_protest",
+      "title": "Political Protest",
+      "description": "Crowds fill the squares. The government feels the street.",
+      "category": "politics",
+      "minEraId": "empire",
+      "weight": 8,
+      "choices": [
+        {
+          "id": "listen",
+          "label": "Negotiate reforms",
+          "immediate": { "happiness": 12, "stability": 5, "money": -40 },
+          "delayed": []
+        },
+        {
+          "id": "suppress",
+          "label": "Suppress the protest",
+          "immediate": { "happiness": -20, "stability": -5, "military": -10 },
+          "delayed": [{ "turns": 6, "effects": { "revoltRisk": 15 } }]
+        },
+        {
+          "id": "elections",
+          "label": "Promise elections",
+          "immediate": { "happiness": 8 },
+          "delayed": [{ "turns": 12, "effects": { "stability": 10 }, "unlockGovernment": "democracy" }]
+        }
+      ]
+    },
+    {
+      "id": "scientific_discovery",
+      "title": "Scientific Discovery",
+      "description": "A brilliant mind presents a breakthrough.",
+      "category": "science",
+      "minEraId": "ancient",
+      "weight": 10,
+      "choices": [
+        {
+          "id": "fund",
+          "label": "Fund the research fully",
+          "immediate": { "money": -70, "science": 80 },
+          "delayed": [{ "turns": 5, "effects": { "science": 40 } }]
+        },
+        {
+          "id": "share",
+          "label": "Share findings with allies",
+          "immediate": { "science": 30, "diplomacy": 15 },
+          "delayed": []
+        },
+        {
+          "id": "classify",
+          "label": "Classify for military use",
+          "immediate": { "science": 20, "military": 25 },
+          "delayed": [{ "turns": 4, "effects": { "happiness": -5 } }]
+        }
+      ]
+    },
+    {
+      "id": "olympics",
+      "title": "World Games Invitation",
+      "description": "Civilizations gather for peaceful competition.",
+      "category": "culture",
+      "minEraId": "empire",
+      "weight": 4,
+      "choices": [
+        {
+          "id": "host",
+          "label": "Host the games",
+          "immediate": { "money": -200, "happiness": 20 },
+          "delayed": [{ "turns": 6, "effects": { "prestige": 30, "trade": 20 } }]
+        },
+        {
+          "id": "participate",
+          "label": "Send athletes",
+          "immediate": { "money": -40, "happiness": 8, "diplomacy": 10 },
+          "delayed": []
+        },
+        {
+          "id": "boycott",
+          "label": "Boycott",
+          "immediate": { "diplomacy": -15, "stability": 5 },
+          "delayed": []
+        }
+      ]
+    },
+    {
+      "id": "resources_found",
+      "title": "Natural Resources Found",
+      "description": "Prospectors report a rich deposit within your borders.",
+      "category": "economy",
+      "minEraId": "tribe",
+      "weight": 12,
+      "choices": [
+        {
+          "id": "exploit",
+          "label": "Exploit immediately",
+          "immediate": { "gold": 80, "iron": 40, "coal": 30, "oil": 20 },
+          "delayed": [{ "turns": 8, "effects": { "happiness": -5 } }]
+        },
+        {
+          "id": "sustainable",
+          "label": "Develop sustainably",
+          "immediate": { "money": -50, "gold": 20 },
+          "delayed": [{ "turns": 10, "effects": { "gold": 60, "economy": 15, "happiness": 5 } }]
+        },
+        {
+          "id": "reserve",
+          "label": "Keep as strategic reserve",
+          "immediate": { "stability": 5 },
+          "delayed": [{ "turns": 15, "effects": { "military": 20, "oil": 50 } }]
+        }
+      ]
+    },
+    {
+      "id": "border_conflict",
+      "title": "Border Conflict",
+      "description": "Skirmishes flare along a disputed frontier.",
+      "category": "war",
+      "minEraId": "ancient",
+      "weight": 9,
+      "choices": [
+        {
+          "id": "mobilize",
+          "label": "Mobilize the army",
+          "immediate": { "military": 20, "money": -60, "happiness": -5 },
+          "delayed": [{ "turns": 2, "effects": { "diplomacy": -20 } }]
+        },
+        {
+          "id": "negotiate",
+          "label": "Open negotiations",
+          "immediate": { "diplomacy": 10, "money": -30 },
+          "delayed": [{ "turns": 4, "effects": { "stability": 8 } }]
+        },
+        {
+          "id": "fortify",
+          "label": "Fortify the border",
+          "immediate": { "stone": -50, "wood": -30, "military": 10 },
+          "delayed": [{ "turns": 6, "effects": { "stability": 5 } }]
+        }
+      ]
+    },
+    {
+      "id": "bountiful_hunt",
+      "title": "Bountiful Hunt",
+      "description": "Scouts return with more game than the tribe can carry.",
+      "category": "fortune",
+      "minEraId": "tribe",
+      "weight": 14,
+      "choices": [
+        {
+          "id": "feast",
+          "label": "Hold a feast",
+          "immediate": { "food": 50, "happiness": 15 },
+          "delayed": []
+        },
+        {
+          "id": "preserve",
+          "label": "Smoke and store",
+          "immediate": { "food": 80 },
+          "delayed": [{ "turns": 3, "effects": { "population": 10 } }]
+        },
+        {
+          "id": "trade_surplus",
+          "label": "Trade the surplus",
+          "immediate": { "food": 20, "gold": 25 },
+          "delayed": []
+        }
+      ]
+    },
+    {
+      "id": "ai_breakthrough",
+      "title": "AI Breakthrough",
+      "description": "Laboratories report a self-improving system.",
+      "category": "science",
+      "minEraId": "future",
+      "weight": 6,
+      "choices": [
+        {
+          "id": "integrate",
+          "label": "Integrate into governance",
+          "immediate": { "science": 100, "economy": 30 },
+          "delayed": [{ "turns": 8, "effects": { "stability": -10, "science": 80 } }]
+        },
+        {
+          "id": "regulate",
+          "label": "Impose strict regulation",
+          "immediate": { "science": 40, "stability": 10 },
+          "delayed": []
+        },
+        {
+          "id": "weaponize",
+          "label": "Weaponize the AI",
+          "immediate": { "military": 60, "happiness": -15 },
+          "delayed": [{ "turns": 5, "effects": { "diplomacy": -25 } }]
+        }
+      ]
+    }
+  ]
+}

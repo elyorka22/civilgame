@@ -1,0 +1,17 @@
+{
+  "units": [
+    { "id": "hunters", "name": "Hunters", "eraId": "tribe", "cost": { "food": 20, "wood": 10 }, "strength": 8, "upkeep": { "food": 2 }, "roles": ["attack", "defend"] },
+    { "id": "warriors", "name": "Warriors", "eraId": "ancient", "cost": { "food": 30, "iron": 10, "money": 20 }, "strength": 18, "upkeep": { "food": 3, "money": 2 }, "roles": ["attack", "defend"] },
+    { "id": "archers", "name": "Archers", "eraId": "ancient", "cost": { "food": 25, "wood": 30, "money": 15 }, "strength": 14, "upkeep": { "food": 2, "money": 1 }, "roles": ["defend", "bomb"] },
+    { "id": "knights", "name": "Knights", "eraId": "empire", "cost": { "food": 40, "iron": 30, "money": 60 }, "strength": 35, "upkeep": { "food": 4, "money": 5 }, "roles": ["attack", "defend"] },
+    { "id": "warships", "name": "Warships", "eraId": "empire", "cost": { "wood": 80, "iron": 20, "money": 100 }, "strength": 40, "upkeep": { "money": 8 }, "roles": ["naval_invasion", "defend"] },
+    { "id": "infantry", "name": "Infantry", "eraId": "industrial", "cost": { "food": 50, "iron": 40, "money": 80 }, "strength": 55, "upkeep": { "food": 5, "money": 8 }, "roles": ["attack", "defend"] },
+    { "id": "artillery", "name": "Artillery", "eraId": "industrial", "cost": { "iron": 60, "coal": 30, "money": 120 }, "strength": 70, "upkeep": { "money": 10 }, "roles": ["bomb", "attack"] },
+    { "id": "tanks", "name": "Tanks", "eraId": "modern", "cost": { "iron": 80, "oil": 50, "money": 200 }, "strength": 95, "upkeep": { "oil": 5, "money": 15 }, "roles": ["attack", "defend"] },
+    { "id": "fighters", "name": "Fighters", "eraId": "modern", "cost": { "iron": 70, "oil": 60, "money": 250 }, "strength": 90, "upkeep": { "oil": 8, "money": 18 }, "roles": ["bomb", "defend"] },
+    { "id": "drones", "name": "Drones", "eraId": "modern", "cost": { "money": 180, "science": 40 }, "strength": 75, "upkeep": { "electricity": 5, "money": 12 }, "roles": ["drone", "spy"] },
+    { "id": "missiles", "name": "Missiles", "eraId": "modern", "cost": { "money": 300, "oil": 40, "science": 60 }, "strength": 120, "upkeep": { "money": 20 }, "roles": ["missile"] },
+    { "id": "mechs", "name": "Combat Mechs", "eraId": "future", "cost": { "money": 400, "iron": 100, "electricity": 40 }, "strength": 150, "upkeep": { "electricity": 10, "money": 25 }, "roles": ["attack", "defend"] },
+    { "id": "spies", "name": "Spies", "eraId": "empire", "cost": { "money": 80, "gold": 20 }, "strength": 5, "upkeep": { "money": 6 }, "roles": ["spy"] }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "technologies": [
+    { "id": "fire", "name": "Fire", "eraId": "tribe", "cost": 20, "prerequisites": [], "effects": { "food": 0.05, "happiness": 0.05 }, "description": "Warmth, cooking, and light against the night." },
+    { "id": "stone_tools", "name": "Stone Tools", "eraId": "tribe", "cost": 30, "prerequisites": [], "effects": { "wood": 0.1, "stone": 0.1, "military": 0.05 }, "description": "Sharper edges for hunting and crafting." },
+    { "id": "hunting", "name": "Hunting", "eraId": "tribe", "cost": 25, "prerequisites": ["stone_tools"], "effects": { "food": 0.15 }, "description": "Coordinated hunts feed the tribe." },
+    { "id": "fishing", "name": "Fishing", "eraId": "tribe", "cost": 25, "prerequisites": ["stone_tools"], "effects": { "food": 0.12 }, "description": "Rivers and coasts become larders." },
+    { "id": "agriculture", "name": "Agriculture", "eraId": "ancient", "cost": 80, "prerequisites": ["fire", "hunting"], "effects": { "food": 0.35, "populationGrowth": 0.1 }, "description": "Fields replace the endless trek for food." },
+    { "id": "wheel", "name": "Wheel", "eraId": "ancient", "cost": 70, "prerequisites": ["stone_tools"], "effects": { "economy": 0.1, "military": 0.05 }, "description": "Movement and logistics reinvented." },
+    { "id": "writing", "name": "Writing", "eraId": "ancient", "cost": 90, "prerequisites": ["agriculture"], "effects": { "science": 0.25, "stability": 0.05 }, "description": "Memory that outlives a single lifetime." },
+    { "id": "roads", "name": "Roads", "eraId": "ancient", "cost": 85, "prerequisites": ["wheel"], "effects": { "economy": 0.15, "trade": 0.2 }, "description": "Cities knit together by stone and will." },
+    { "id": "mathematics", "name": "Mathematics", "eraId": "empire", "cost": 140, "prerequisites": ["writing"], "effects": { "science": 0.2, "economy": 0.05 }, "description": "Numbers unlock engineering and taxation." },
+    { "id": "steel", "name": "Steel", "eraId": "empire", "cost": 150, "prerequisites": ["mathematics"], "effects": { "military": 0.25, "iron": 0.2 }, "description": "Harder blades and stronger walls." },
+    { "id": "navigation", "name": "Navigation", "eraId": "empire", "cost": 130, "prerequisites": ["mathematics", "roads"], "effects": { "trade": 0.25, "naval": 0.3 }, "description": "Horizons become destinations." },
+    { "id": "steam_power", "name": "Steam Power", "eraId": "industrial", "cost": 220, "prerequisites": ["steel"], "effects": { "economy": 0.3, "coal": 0.2 }, "description": "Machines breathe fire and water." },
+    { "id": "electricity", "name": "Electricity", "eraId": "industrial", "cost": 240, "prerequisites": ["steam_power"], "effects": { "economy": 0.25, "science": 0.15, "electricity": 0.5 }, "description": "Cities glow through the night." },
+    { "id": "railroads", "name": "Railroads", "eraId": "industrial", "cost": 200, "prerequisites": ["steam_power", "roads"], "effects": { "economy": 0.2, "trade": 0.25 }, "description": "Iron veins across the continent." },
+    { "id": "computers", "name": "Computers", "eraId": "modern", "cost": 320, "prerequisites": ["electricity"], "effects": { "science": 0.35, "economy": 0.15 }, "description": "Calculation at the speed of thought." },
+    { "id": "nuclear_energy", "name": "Nuclear Energy", "eraId": "modern", "cost": 350, "prerequisites": ["electricity", "mathematics"], "effects": { "electricity": 0.4, "military": 0.2 }, "description": "The atom's promise and peril." },
+    { "id": "internet", "name": "Internet", "eraId": "modern", "cost": 300, "prerequisites": ["computers"], "effects": { "science": 0.25, "happiness": 0.1, "trade": 0.2 }, "description": "A network that spans the globe." },
+    { "id": "artificial_intelligence", "name": "Artificial Intelligence", "eraId": "future", "cost": 450, "prerequisites": ["computers", "internet"], "effects": { "science": 0.45, "economy": 0.2, "military": 0.15 }, "description": "Minds of silicon join the civilization." },
+    { "id": "robotics", "name": "Robotics", "eraId": "future", "cost": 420, "prerequisites": ["artificial_intelligence"], "effects": { "economy": 0.3, "military": 0.2, "unemployment": 0.1 }, "description": "Labor without fatigue." },
+    { "id": "space_travel", "name": "Space Travel", "eraId": "future", "cost": 500, "prerequisites": ["nuclear_energy", "computers"], "effects": { "science": 0.3, "prestige": 0.4 }, "description": "The world is no longer enough." },
+    { "id": "fusion_energy", "name": "Fusion Energy", "eraId": "future", "cost": 480, "prerequisites": ["nuclear_energy", "artificial_intelligence"], "effects": { "electricity": 0.6, "economy": 0.25 }, "description": "Stars in bottles power megacities." },
+    { "id": "quantum_computing", "name": "Quantum Computing", "eraId": "future", "cost": 520, "prerequisites": ["artificial_intelligence"], "effects": { "science": 0.5 }, "description": "Possibility trees computed in parallel." }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "eras": [
+    {
+      "id": "tribe",
+      "name": "Tribe Age",
+      "order": 0,
+      "description": "Hunting, fishing, and the first sparks of fire.",
+      "yearStart": -10000,
+      "requiredTechIds": [],
+      "cityVisual": "village",
+      "bonuses": { "foodProduction": 1.0, "scienceRate": 0.6, "militaryPower": 0.5 }
+    },
+    {
+      "id": "ancient",
+      "name": "Ancient Age",
+      "order": 1,
+      "description": "Farming, writing, roads, and the rise of cities.",
+      "yearStart": -3000,
+      "requiredTechIds": ["agriculture", "writing"],
+      "cityVisual": "ancient_city",
+      "bonuses": { "foodProduction": 1.3, "scienceRate": 1.0, "militaryPower": 0.9 }
+    },
+    {
+      "id": "empire",
+      "name": "Empire Age",
+      "order": 2,
+      "description": "Kingdoms, faith, diplomacy, castles, and fleets.",
+      "yearStart": 500,
+      "requiredTechIds": ["mathematics", "steel"],
+      "cityVisual": "kingdom",
+      "bonuses": { "foodProduction": 1.5, "scienceRate": 1.2, "militaryPower": 1.4 }
+    },
+    {
+      "id": "industrial",
+      "name": "Industrial Age",
+      "order": 3,
+      "description": "Factories, railroads, steam, coal, and electricity.",
+      "yearStart": 1760,
+      "requiredTechIds": ["steam_power", "electricity"],
+      "cityVisual": "industrial_city",
+      "bonuses": { "foodProduction": 1.8, "scienceRate": 1.8, "militaryPower": 1.8 }
+    },
+    {
+      "id": "modern",
+      "name": "Modern Age",
+      "order": 4,
+      "description": "Democracy, nuclear power, air forces, and global trade.",
+      "yearStart": 1945,
+      "requiredTechIds": ["computers", "nuclear_energy"],
+      "cityVisual": "modern_metropolis",
+      "bonuses": { "foodProduction": 2.2, "scienceRate": 2.5, "militaryPower": 2.4 }
+    },
+    {
+      "id": "future",
+      "name": "Future Age",
+      "order": 5,
+      "description": "AI, robotics, fusion, quantum computing, and the stars.",
+      "yearStart": 2100,
+      "requiredTechIds": ["artificial_intelligence", "space_travel"],
+      "cityVisual": "megacity",
+      "bonuses": { "foodProduction": 3.0, "scienceRate": 4.0, "militaryPower": 3.5 }
+    }
+  ]
+}
